@@ -1,0 +1,290 @@
+div.radtooltip_mySkin.ResizeElement
+{
+	border: solid 1px #bbb;
+	background: #f8fce0;
+}
+
+div.radtooltip_mySkin.LoadingSign
+{	
+	background: url('Tooltip/Loading.gif') no-repeat center !important;
+	width: 100% !important; 
+	height: 100% !important;
+	text-align:left !important;
+}
+
+div.radtooltip_mySkin
+{
+	position: absolute;
+	cursor: default;
+	border: solid 1px #bbb;
+	background: #f7f7f7;
+}
+
+div.radtooltip_mySkin.LoadingSign
+{	
+	background: url('Tooltip/Loading.gif')  no-repeat center;
+	width: 100%; 
+	height: 100%;
+	border: 0;
+}
+
+div.radtooltip_mySkin div.ToolTipCallout
+{
+	display: none;
+}
+
+div.radtooltip_mySkin.visiblecallout div.ToolTipCallout
+{
+	display: block;
+}
+
+
+div.radtooltip_mySkin table.ToolTipWrapper
+{
+	padding: 0; 
+	margin: 0;
+	border-collapse: collapse;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopLeft,
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopRight,
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipBottomLeft,
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipBottomRight
+{
+	height: 4px; 
+	width: 4px; 
+	line-height: 4px;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopCenter,
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipBottomCenter
+{
+	height: 4px; 
+	line-height: 4px;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipLeftMiddle,
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipRightMiddle
+{
+	width: 4px;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipContent
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	height: 100%;
+	color: #333;
+}
+
+div.radtooltip_mySkin div.ToolTipTitlebar
+{	
+	color: black;
+	font: bold 11px Verdana, Arial, Sans-serif;
+	float: left;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopCenter div.ToolTipTitlebar div
+{
+	float: left;
+	margin-right: 12px;
+	line-height: 21px;	
+}
+
+/* close button */
+div.radtooltip_mySkin a.CloseButton,
+div.radtooltip_mySkin a.CloseButton:hover
+{
+	display: block; 
+	float: right;
+	width: 16px; 
+	line-height: 16px; 
+	height: 16px;
+	margin-right: -4px;
+	background: url(Tooltip/close.gif) no-repeat;
+	text-indent: -9999px;
+	outline: none;
+}
+
+/* RTL */
+div.radtooltip_mySkin_rtl a.CloseButton,
+div.radtooltip_mySkin_rtl a.CloseButton:hover
+{
+	float: left !important;
+	text-decoration: none !important;
+    outline: none;
+}
+
+div.radtooltip_mySkin_rtl div.ToolTipTitlebar,
+div.radtooltip_mySkin_rtl table.ToolTipWrapper td.ToolTipTopCenter div.ToolTipTitlebar div
+{
+	float: right !important;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopCenter div.ToolTipTitlebar div
+{
+	margin-right: auto;
+	margin-left: 12px;
+}
+
+/* position="Center" */
+div.radtooltip_mySkin_rtl .Center
+{
+	right: 0;
+	left: auto;
+}
+
+/* position="BottomRight" */
+.radtooltip_mySkin_rtl .TopLeft
+{
+	margin-right: -15px;
+}
+
+/* position="BottomCenter" */
+.radtooltip_mySkin_rtl .TopCenter
+{
+	margin-right: 5px;
+}
+
+/* position="BottomLeft" */
+.radtooltip_mySkin_rtl .TopRight
+{
+	margin-right: 26px;
+}
+
+/* position="TopCenter" */
+.radtooltip_mySkin_rtl .BottomCenter
+{
+	margin-right: 5px !important;
+}
+
+/* position="TopLeft" */
+.radtooltip_mySkin_rtl .BottomRight
+{
+	margin-right: 25px !important;
+}
+
+/* position="TopRight" */
+.radtooltip_mySkin_rtl .BottomLeft
+{
+	margin-right: -26px !important;
+}
+
+/* position="MiddleRight" */
+.radtooltip_mySkin_rtl .MiddleLeft
+{
+	margin-right: 11px;
+}
+
+/* position="MiddleLeft" */
+.radtooltip_mySkin_rtl .MiddleRight
+{
+	margin-right: 0px;
+}
+/* RTL support end */
+
+div.radtooltip_mySkin div.ToolTipCallout
+{
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	line-height: 11px; 
+	height: 11px; 
+	width: 11px;
+	background-image: url('Tooltip/Callouts.gif');
+	background-repeat: no-repeat;
+}
+
+/* position="Center" */
+div.radtooltip_mySkin .Center
+{
+	background: none !important;
+}
+
+/* position="BottomRight" */
+.radtooltip_mySkin .TopLeft
+{
+	margin-top: -11px; 
+	margin-left: 15px;
+}
+
+/* position="BottomCenter" */
+.radtooltip_mySkin .TopCenter
+{
+	left: 50% !important;
+	margin-top: -11px; 
+	margin-left: -5px;
+	background-position: 0 -11px !important;
+}
+
+/* position="BottomLeft" */
+.radtooltip_mySkin .TopRight
+{
+	left: 100% !important;
+	margin-top: -11px; 
+	margin-left: -26px;
+	background-position: 0 -22px !important;
+}
+
+/* position="TopCenter" */
+.radtooltip_mySkin .BottomCenter
+{
+	top: 100% !important; 
+	left: 50% !important;
+	margin-left: -5px !important; 
+	margin-top: 0 !important;
+	/*width: 100% !important;*/
+	background-position: 0 -55px !important;
+}
+
+/* position="TopLeft" */
+.radtooltip_mySkin .BottomRight
+{
+	top: 100% !important; 
+	left: 100% !important;
+	margin-left: -25px !important; 
+	margin-top: 0px !important;
+	background-position: 0 -66px !important;
+}
+
+/* position="TopRight" */
+.radtooltip_mySkin .BottomLeft
+{
+	top: 100% !important;
+	margin-left: 26px !important;
+	margin-top: 0px !important;
+	background-position: 0 -88px !important;
+}
+
+/* position="MiddleRight" */
+.radtooltip_mySkin .MiddleLeft
+{
+	top: 50% !important;
+	margin-left: -11px; 
+	margin-top: -5px;
+	background-position: 0 -44px !important;
+}
+
+/* position="MiddleLeft" */
+.radtooltip_mySkin .MiddleRight
+{
+	left: 100% !important; 
+	top: 50% !important;
+	margin-left: 0px; margin-top: -5px;
+	background-position: 0 -33px;
+}
+
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopLeft,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopCenter,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipTopRight,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipLeftMiddle,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipContent,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipRightMiddle,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipBottomLeft,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipBottomCenter,   
+div.radtooltip_mySkin table.ToolTipWrapper td.ToolTipBottomRight   
+{
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+	background: #f7f7f7;
+}

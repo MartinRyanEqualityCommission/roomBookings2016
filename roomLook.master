@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" CodeFile="roomLook.master.vb" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>ECNI Room Booking</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Erwin Aligam - styleshout.com" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Room Booking and Visitor Notifications</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <asp:ContentPlaceHolder runat="server" ID="navDay">
+              <li><a href="default.aspx">Rooms Day View</a></li>
+              </asp:ContentPlaceHolder>
+              <asp:ContentPlaceHolder runat="server" ID="navWeek">
+              <li><a href="week.aspx">Rooms Week View</a></li>
+              </asp:ContentPlaceHolder>
+              <asp:ContentPlaceHolder runat="server" ID="navVisitors">
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" class="dropdown-toggle">Visitors <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="visitorSearch.aspx">Visitor List</a></li>
+                  <li><a href="visitors.aspx">New Visitor</a></li>
+                </ul>
+              </li>
+              </asp:ContentPlaceHolder>
+              <asp:ContentPlaceHolder runat="server" ID="navReports">
+              <li><a href="reports.aspx">Reports</a></li>
+              </asp:ContentPlaceHolder>
+              <asp:ContentPlaceHolder runat="server" ID="navSupport">
+              <li><a href="support.aspx">FAQs</a></li>
+              </asp:ContentPlaceHolder>
+            </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      		</div></div>
+	
+	<!-- content starts -->
+    <div id="page-wrapper">
+            <div class="container-fluid">
+        <asp:contentplaceholder id="mainContent" runat="server">
+        </asp:contentplaceholder>
+	</div></div>
+	<!-- contents end here -->	
+	<!-- footer starts here -->	
+	<div id="footer-wrapper" class="container_16">
+		<div id="footer-bottom">
+			<p style="border: solid 1px #808080; background-color: #FFFFFF; padding: 5px; font-weight: bold; color: Red; font-size: larger" class="bottom-left">			
+            Please remember to turn off all lights, air-con and electrical appliances in the room when your meeting is finished
+            </p>	
+		</div>	
+			
+	</div>
+	<!-- footer ends here -->
+    </div>
+</body>
+</html>
+
