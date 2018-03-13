@@ -14,7 +14,7 @@
     <asp:HiddenField ID="txtVisitorID" runat="server" />
     <table style="border: 1px; margin-top: 0px; padding-top: 0px;" width="100%">
 <tr><td colspan="2">
-<h3>Visitors</h3>
+<h3 style="color: darkslategrey">Visitors</h3>
 </td></tr>
 <tr>
 <th style="text-align: right; background-color: #DDEBF5; border-top: 1px solid #003399; border-left: 1px solid #003399; border-bottom: 1px solid #003399; border-right: 1px solid #003399; color: #003399; padding-right: 5px;" width="30%">Visit Date</th>
